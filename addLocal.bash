@@ -1,4 +1,10 @@
 #!/bin/bash
+# Script which add new record in the local.conf
+# file used by:
+#  https://hub.docker.com/r/edza78/dnsmasq
+# Created by: Edier Zapata <edza978 at gmail dot com>
+#
+
 read -p "Domain to Add: " u
 U=$(echo ${u} | sed 's|http://||g; s|https://||g')
 
